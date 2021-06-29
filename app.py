@@ -43,4 +43,4 @@ def recommend_api():
     return jsonify(moive)
 
 if __name__ == "__main__":
-    app.run(debug=True,port=5500)
+    app.run()
