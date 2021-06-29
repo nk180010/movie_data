@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie API</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+    <body bgcolor="#00FF00">
+        <center><h1>MOVIE PREDICTION AND RECOMMEND MOVIE</h1></center>
+        <center>
+        <div id="contanier">
+        <ul>
+        <li>  <a href="{{ url_for('predict')}}">Prediciton</a></li>
+        <li> <a href="{{ url_for('recommend')}}">Recommend_Movie</a></li>
+        </ul>
+       </div> 
+       </center>
+    </body>
+</html>
