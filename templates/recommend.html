@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+    <body>
+        <center><h3>MOVIE RECOMMEND</h3></center>
+        <form action="{{ url_for('recommend')}}" method="post">
+            <input type="text" name="movie" placeholder="Experience" required="required"><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Recommend</button>
+        </form>
+
+        {{movie}}
+    </body>
+</html>
